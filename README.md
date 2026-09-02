@@ -1,10 +1,10 @@
 # Africa Disease Burden Analytics Lakehouse
 
-An end-to-end Medallion lakehouse (Bronze → Silver → Gold) built on Databricks and PySpark, tracking five major causes of mortality across 54 African countries using WHO Global Health Observatory data — feeding a Power BI dashboard.
+An end-to-end Medallion lakehouse (Bronze → Silver → Gold) built on Databricks and PySpark, tracking five major causes of mortality across 54 African countries using WHO Global Health Observatory data feeding a Power BI dashboard.
 
 ## Problem Statement
 
-Public health researchers, NGOs, and policymakers need a reliable, unified view of how disease burden has changed over time across African countries. WHO publishes this data, but it's spread across dozens of separate indicator datasets, inconsistently labeled, and mixed in with global (non-African) records — making it hard to get a clean, continent-specific picture without significant cleaning work.
+Public health researchers, NGOs, and policymakers need a reliable, unified view of how disease burden has changed over time across African countries. WHO publishes this data, but it's spread across dozens of separate indicator datasets, inconsistently labeled, and mixed in with global (non-African) records which makes it hard to get a clean, continent-specific picture without significant cleaning work.
 
 This project builds a pipeline that ingests, cleans, and validates WHO mortality data for five major indicators (HIV/AIDS, malaria, maternal mortality, TB, and under-5 mortality), producing an analysis-ready dataset and dashboard focused specifically on Africa. Nigeria is used as a spotlight country throughout, but the pipeline itself covers the full continent — 54 countries — which is what makes cross-country and year-over-year comparisons meaningful in the Gold layer.
 
